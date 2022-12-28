@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    background-color: #E16664;
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    margin: 20vh 30vw;
+}
+
+.transition {
+    transition: transform 1s ease;
+    transform-box: border-box;
+}
+
+div:hover {
+    transform: rotate(90deg) scale(2);
+    transform-origin: bottom left;
+}
+
+div:not(:hover) {
+    transform: rotate(0deg) scale(1);
+    transform-origin: bottom left;
+}
